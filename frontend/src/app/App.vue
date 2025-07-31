@@ -15,9 +15,8 @@ type Icons = {
 }
 
 const getPathToIcon = (file: string, path: string, viewBox?: string) => {
-  return `svguse:${Platform.is.electron ? '' : '/'}${file}.svg#${path}${
-    viewBox ? '|' + viewBox : ''
-  }`
+  return `svguse:${Platform.is.electron ? '' : '/lab.flipper.net/'}${file}.svg#${path}${viewBox ? '|' + viewBox : ''
+    }`
 }
 
 const myIcons: Icons = {
