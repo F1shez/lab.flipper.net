@@ -1,0 +1,87 @@
+.q-card.rounded-borders {
+  border-radius: 24px;
+}
+.q-card .q-item.rounded-borders {
+  border-radius: 16px;
+}
+.q-item.rounded-borders {
+  border-radius: 8px;
+}
+.app__icon-wrapper {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+}
+.app__screenshot-wrapper {
+  padding: 2px 0;
+}
+.app__image-wrapper {
+  border-radius: 6px;
+  border: 2px solid black;
+}
+.app__image {
+  image-rendering: pixelated;
+}.q-card.rounded-borders[data-v-9b54cbe9] {
+  border-radius: 24px;
+}
+.q-card .q-item.rounded-borders[data-v-9b54cbe9] {
+  border-radius: 16px;
+}
+.q-item.rounded-borders[data-v-9b54cbe9] {
+  border-radius: 8px;
+}
+.list[data-v-9b54cbe9] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  justify-items: center;
+  gap: 4px 24px;
+}.q-card.rounded-borders[data-v-6992056e] {
+  border-radius: 24px;
+}
+.q-card .q-item.rounded-borders[data-v-6992056e] {
+  border-radius: 16px;
+}
+.q-item.rounded-borders[data-v-6992056e] {
+  border-radius: 8px;
+}
+.installed-card[data-v-6992056e] {
+  transition-duration: 300ms;
+}
+.installed-card--supported[data-v-6992056e]:hover, .installed-card--supported[data-v-6992056e]:focus-visible {
+  z-index: 1;
+  box-shadow: 0 1px 11px rgba(0, 0, 0, 0.13), 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px -2px rgba(0, 0, 0, 0.08) !important;
+}
+.installed-card--supported[data-v-6992056e]:focus-visible {
+  outline: none;
+}
+.installed-card__icon-wrapper[data-v-6992056e] {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+}
+.installed-card__button-wrapper[data-v-6992056e] {
+  width: 80px;
+}.q-card.rounded-borders[data-v-2ca0b184] {
+  border-radius: 24px;
+}
+.q-card .q-item.rounded-borders[data-v-2ca0b184] {
+  border-radius: 16px;
+}
+.q-item.rounded-borders[data-v-2ca0b184] {
+  border-radius: 8px;
+}
+.update-all-badge[data-v-2ca0b184] {
+  position: relative;
+  top: -0.5px;
+  margin-left: 10px;
+  padding: 3px 4px 1px 4px;
+  font-size: 16px;
+  line-height: 13px;
+  background: rgba(255, 255, 255, 0.7019607843);
+  color: #00c853;
+  border-radius: 4px;
+}
