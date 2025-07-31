@@ -77,3 +77,25 @@ jobs:
         if: ${{ steps.tag.outputs.image_tag != '0.0.0' }}
         run: |
           echo ${{ steps.docker_build_prod.outputs.digest }}
+
+      - name: 'Create container from built image'
+        if: ${{ steps.tag.outputs.image_tag == '0.0.0' }}
+        run: |
+          docker create --name extract_container ${{steps.tag.outputs.image_name}}:${{steps.tag.outputs.image_tag_dev}}
+
+      - name: 'Copy dist/spa from container'
+        if: ${{ steps.tag.outputs.image_tag == '0.0.0' }}
+        run: |
+          docker cp extract_container:/usr/share/nginx/html ./spa
+
+      - name: 'Remove container'
+        if: ${{ steps.tag.outputs.image_tag == '0.0.0' }}
+        run: |
+          docker rm extract_container
+
+      - name: 'Deploy to GitHub Pages'
+        if: ${{ steps.tag.outputs.image_tag == '0.0.0' }}
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./spa

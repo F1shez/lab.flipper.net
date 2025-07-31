@@ -94,7 +94,7 @@ export default defineConfig((ctx) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // publicPath: '/',
+      publicPath: '/lab.flipper.net/',
       // analyze: true,
       env: {
         DEBUGGING: ctx.debug,
@@ -292,8 +292,8 @@ export default defineConfig((ctx) => {
           notarize: process.env.MACOS_NOTARIZATION_SKIP
             ? false
             : {
-                teamId: process.env.APPLE_TEAM_ID || ''
-              },
+              teamId: process.env.APPLE_TEAM_ID || ''
+            },
 
           target: ['dmg']
         }
