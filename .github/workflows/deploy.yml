@@ -90,8 +90,8 @@ jobs:
 
       - name: Copy .nojekyll and 404.html
         run: |
-          touch frontend/dist/spa/.nojekyll
-          cp frontend/dist/spa/index.html frontend/dist/spa/404.html
+          touch ./spa/.nojekyll
+          cp ./spa/index.html ./spa/404.html
 
       - name: 'Remove container'
         if: ${{ steps.tag.outputs.image_tag == '0.0.0' }}
